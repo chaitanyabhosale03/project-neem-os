@@ -1,0 +1,15 @@
+{
+  "NeemOSCapitalV2Module": {
+    "assetName": "Premium Real Estate Fund",
+    "assetCategory": "Real Estate",
+    "priceFeed": "0x694AA1769357215DE4FAC081bf1f309aDC325306",
+    "stablecoin": "0x0000000000000000000000000000000000000000"
+  },
+  "NeemOSNexusV2Module": {
+    "uri": "ipfs://QmYourNexusMetadataCID/{id}.json"
+  },
+  "NeemOSStakingModule": {
+    "neemToken": "0x0000000000000000000000000000000000000000",
+    "rewardToken": "0x0000000000000000000000000000000000000000"
+  }
+}
