@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-pragma solidity ^0.8.24;
+pragma solidity ^0.8.25;
 
 import "@openzeppelin/contracts-upgradeable/token/ERC1155/ERC1155Upgradeable.sol";
 import "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol";
@@ -89,7 +89,6 @@ contract NeemOSNexusV2 is
     __ERC1155_init(uri_);
     __Ownable_init(msg.sender);
     __AccessControl_init();
-    __UUPSUpgradeable_init();
     
     _grantRole(DEFAULT_ADMIN_ROLE, msg.sender);
     _grantRole(GAME_MASTER_ROLE, msg.sender);

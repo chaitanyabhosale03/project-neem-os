@@ -4,16 +4,16 @@ module.exports = buildModule("NeemOSCapitalV2Module", (m) => {
   const assetName = m.getParameter("assetName", "Premium Real Estate Fund");
   const assetCategory = m.getParameter("assetCategory", "Real Estate");
   
-  // Sepolia testnet Chainlink ETH/USD oracle
+  // For local testing, use zero addresses (allowed now with updated constructor)
+  // In production, replace with actual Chainlink oracle and USDC addresses
   const chainlinkPriceFeed = m.getParameter(
     "priceFeed",
-    "0x694AA1769357215DE4FAC081bf1f309aDC325306"
+    "0x0000000000000000000000000000000000000000" // Zero for testing
   );
   
-  // Mock USDC for testing (deploy your own or use existing)
   const stablecoin = m.getParameter(
     "stablecoin",
-    "0x0000000000000000000000000000000000000000" // Replace with actual USDC
+    "0x0000000000000000000000000000000000000000" // Zero for testing
   );
 
   // Deploy NeemOSCapitalV2

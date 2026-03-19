@@ -10,8 +10,11 @@
     "hardhat:node": "npx hardhat node",
     "hardhat:compile": "npx hardhat compile",
     "hardhat:console": "npx hardhat console --network localhost",
-    "deploy:v1": "npx hardhat ignition deploy ignition/modules/NeemOS.cjs ignition/modules/NeemOSCapital.cjs ignition/modules/NeemOSNexus.cjs ignition/modules/NeemOSVerify.cjs --network localhost",
-    "deploy:v2": "npx hardhat ignition deploy ignition/modules/NexusV2.cjs ignition/modules/CapitalV2.cjs ignition/modules/VerifyV2.cjs ignition/modules/NeemOSStaking.cjs --network localhost",
+    "deploy:nexus-v2": "npx hardhat ignition deploy ignition/modules/NexusV2.cjs --network localhost",
+    "deploy:capital-v2": "npx hardhat ignition deploy ignition/modules/CapitalV2.cjs --network localhost",
+    "deploy:verify-v2": "npx hardhat ignition deploy ignition/modules/VerifyV2.cjs --network localhost",
+    "deploy:staking": "npx hardhat ignition deploy ignition/modules/NeemOSStaking.cjs --network localhost",
+    "deploy:v2": "npm run deploy:nexus-v2 && npm run deploy:capital-v2 && npm run deploy:verify-v2 && npm run deploy:staking",
     "test": "npx hardhat test",
     "clean": "npx hardhat clean"
   },

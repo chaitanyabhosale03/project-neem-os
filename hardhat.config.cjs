@@ -8,16 +8,11 @@ const ETHERSCAN_API_KEY = process.env.ETHERSCAN_API_KEY || "YOUR_KEY";
 
 module.exports = {
   solidity: {
-    compilers: [
-      {
-        version: "0.8.24",
-        settings: { optimizer: { enabled: true, runs: 200 } }
-      },
-      {
-        version: "0.8.20",
-        settings: { optimizer: { enabled: true, runs: 200 } }
-      }
-    ]
+    version: "0.8.25",
+    settings: { 
+      optimizer: { enabled: true, runs: 200 },
+      evmVersion: "cancun"
+    }
   },
   networks: {
     hardhat: {
